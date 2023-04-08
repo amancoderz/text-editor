@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.0.0/split.min.js" integrity="sha512-tTsZnBXEzNdEaqUO9Ok8fUofS73xieiBa54pD/sxOSvayIgItM9MmEM0CnUjA13LDnJT22sfwmjf20+Bo2174g==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+       
+    
+  /* background-color: rgb(217, 223, 223); */
+
+ #hdng{
+    color: rgb(27, 172, 121);
+    text-align: center;
+     height: 60px;
+     margin-bottom: 10px;
+ }
+
+ #text{
+    margin-top: 50px;
+    /* margin-left: 320px;
+    margin-right: auto; */
+    height: 200px;
+    width: 396px;
+    background-color: rgb(207, 248, 220);
+    border-color:greenyellow;
+    border: 5px solid;
+    border-width: thin;
+}
+#display{
+    color: rgb(2, 42, 43);
+    margin-bottom: 60px;
+    margin-left: 170px;
+    text-align: center;
+     width: 70px;
+    height: 25px;
+    
+    
+}
+.out-text{
+  
+    text-align: center;
+    color: rgb(14, 128, 65);
+}
+#disp{
+    width: 400px;
+    height: 400px;
+   margin-bottom: 100px;
+    color: rgb(18, 13, 13);
+  
+
+}
+.main{
+    width: 400px;
+    height: 776px;
+    margin-left: 320px;
+    margin: auto;
+}
+
+    </style>
+    <div class="main">
+<h2 id="hdng">HTML CODE EDITOR</h2>
+<div class="txtarea">
+    <textarea id="text"  placeholder="enter some text..."></textarea>
+    <br><br>
+    <button id="display" onclick="sub()">Run</button>
+</div>
+<br>
+<h3 class="out-text">Output <hr></h3>
+    <div id="disp">
+    </div>    
+    </div>
+</body>
+<script type="text/javascript">
+function sub(){
+    let a = document.getElementById("text").value;
+  
+    if(a){
+    
+        document.getElementById("disp").innerHTML=a;
+    }
+    else{
+        alert("please write some text");
+    }
+}
+</script>
+</html>
